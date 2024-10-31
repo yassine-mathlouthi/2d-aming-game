@@ -19,6 +19,17 @@ setInterval(() => {
   target.style.left = randX + "px";
 }, 1000);
 
+var gameStarted = false ; 
+const cursor = document.querySelector(".cursor"); 
+
+function initializeGame(){
+  gameStarted = true
+  document.body.style.cursor="none" ; 
+  cursor.style.display = "block" ; 
+  container.appendChild(target) ; 
+
+
+}
 
 // 2
 
@@ -31,7 +42,17 @@ async function startGame(){
     clearInterval(startTimer)
     startTimerElementNum.innerText="GO ! "
     startTimerElementNum.style.color="goldenrod" ; 
+    setTimeout(()=>
+    {
+      startTimerElementNum.style.display = "none";
+      initializeGame()
+    },1000) // target appearance  ; 
   }
-  },1000)
+  },1000) // 3 2 1
   
 }
+
+window.addEventListener("mousemove", (e) => {
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
+});
