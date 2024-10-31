@@ -14,3 +14,13 @@ body{
   outline: none;
   font-weight: 700;
 }
+#start-timer{
+  
+ 
+  font-size:100px;
+  margin-top: 100%;
+}
+
+.target{
+  height: 100px;
+}
