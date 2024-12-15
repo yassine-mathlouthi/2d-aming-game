@@ -40,4 +40,4 @@ A visually impactful end-game screen to reflect your performance.
 ## 👨‍💻 How to Run the Project  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/2d-aiming-game.git  
+   git clone https://github.com/yassine-mathlouthi/2d-aming-game.git  
